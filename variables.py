@@ -138,3 +138,37 @@ def myfunc():
     print('The cat is in the... ' + x) # The cat is in the... SpAcE!
 
 myfunc()
+
+# le variabili dichiarate all'interno della funzione rimarra in locale e non influisce su quelle globali
+
+x = 'Globe'
+
+def my_func():
+    x = 'World'
+    print('The cat is in the... ' + x) # The cat is in the... World
+
+my_func()
+
+print('The cat is in the... ' + x) # The cat is in the... Globe
+
+# per rendere globale una variabile interna a una funzione si utilizzerà la keyword 'global'
+
+def my_func_():
+    global x
+    x = 'global variable in function'
+
+my_func_()
+
+print('the variables: ' + x) # the variables: global variable in function
+
+# per cambiare la variabile globale
+
+x = 'red'
+
+def my_func1():
+    global x
+    x = 'blue'
+
+my_func1()
+
+print('rose are ' + x) # rose are blue
