@@ -69,3 +69,72 @@ TECNICHE PER RENDERE PIU'LEGGIBILE IL CODICE:
 myVarName = 'John'
 MyVarName = 'John'
 my_var_name = 'John'
+
+# Assegnare valori a più variabili mettendoli su una sola linea
+
+x, y, z = 'Orange', 'Banana', 'Cherry'
+
+print(x, y, z) # Orange Banana Cherry
+
+# o dare il medesimo valore a più variabili
+
+x = y = z = 'Apple'
+
+print(x, y, z) # Apple Apple Apple
+
+# UNPACKING: serve per estrarre i valori da una variabile.
+
+fruits = ['apple', 'strawberry', 'pineapple']
+x, y, z = fruits
+
+print(x, y, z) # apple strawberry pineapple
+
+""" PRINT() -> viene utilizzata per generare delle variabili stampate in console. 
+               Queste possono essere restituite più di una alla volta mettendo una ',' per separarle. 
+               Oppure si può utilizzare l'operatore '+' per generare più variabili.
+"""
+x = 'Python is awesome!'
+
+print(x) # Python is awesome!
+
+x = 'Python'
+y = 'is'
+z = 'awesome!'
+
+print(x, y, z) # Python is awesome!
+
+x = 'Python '
+y = 'is '
+z = 'awesome!'
+
+print(x + y + z) # Python is awesome! -> se non presenti degli spazi dopo 'Python' e 'is', la scritta verrebbe: 'Pythonisawesome!'
+
+# se si utilizzano i numeri nelle variabili, '+' verrà letto come operatore matematico.
+
+x = 5
+y = 10
+
+print(x + y) # 15
+
+# se si uniscono variabili 'int' e 'str', nella funzione print() bisognerà dividerle con una ',', perché se si utilizzerà l'operatore matematico '+' darà errore.
+
+"""
+x = 5
+y = 'Sam'
+
+print(x + y) # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+"""
+
+x = 5
+y = 'Sam'
+
+print(x, y) # 5 Sam
+
+# VARIBILI GLOBALI: possono essere sempre usate sia all'interno di funzioni che fuori.
+
+x = 'SpAcE!'
+
+def myfunc():
+    print('The cat is in the... ' + x) # The cat is in the... SpAcE!
+
+myfunc()
