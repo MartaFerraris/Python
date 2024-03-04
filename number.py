@@ -72,3 +72,33 @@ print(type(c))
 import random
 
 print(random.randrange(1, 10))
+
+# SPECIFICARE IL TIPO DI VARIABILE
+
+"""
+Potrebbero esserci momenti in cui desideri specificare un tipo su una variabile.
+Questo può essere fatto con il casting.
+Il casting in Python viene quindi eseguito utilizzando le funzioni del costruttore:
+ - int(): costruisce un numero intero da un valore letterale intero, un valore letterale float 
+          (rimuovendo tutti i decimali) o un valore letterale stringa (a condizione che la stringa rappresenti un
+          numero intero);
+
+ - float(): costruisce un numero float da un valore letterale intero, un valore letterale float o un valore letterale 
+            stringa (a condizione che la stringa rappresenti un valore float o un numero intero);
+
+ - str(): costruisce una stringa da un'ampia varietà di tipi di dati, incluse stringhe, 
+          valori letterali interi e valori letterali float.
+"""
+
+x = int(1)   # x will be 1
+y = int(2.8) # y will be 2
+z = int("3") # z will be 3
+
+x = float(1)     # x will be 1.0
+y = float(2.8)   # y will be 2.8
+z = float("3")   # z will be 3.0
+w = float("4.2") # w will be 4.2
+
+x = str("s1") # x will be 's1'
+y = str(2)    # y will be '2'
+z = str(3.0)  # z will be '3.0'
