@@ -197,15 +197,3 @@ txt = "We are the so-called "Vikings" from the north."
 '''
 
 txt2 = "We are the so-called \"Vikings\" from the north."
-
-'''
-[\'] = single quote;
-[\\] = backslash;
-[\n] = new line;
-[\r] = carriage return;
-[\t] = tab;
-[\b] = backspace;
-[\f] = form feed;
-[\ooo] = octal value;
-[\xhh] = hex value;
-'''
