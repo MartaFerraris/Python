@@ -149,4 +149,63 @@ print(c)    # Hello World
 
 #-------------------------------------------------------------------------------------------------------------------
 
-#
+# FORMATO STRINGHE
+
+'''
+Per combinare stringhe, numeri e booleani di utilizza il metodo format().
+Al metodo format() si passano gli argomenti attraverso il placeholder {}. 
+'''
+
+age = 36
+txt = 'My name is Pino, and I am {}'
+print(txt.format(age))
+
+boolean = True
+txt1 = 'This boolean is: {}'
+print(txt1.format(boolean))
+
+'''
+Il metodo format() può tenere un numero illemitato di argomenti, collocandoli nei loro rispettivi placeholders.
+'''
+
+qnty = 3
+itemno = 567
+price = 49.95
+myorder = 'I want {} pieces of item {} for {} dollars.'
+print(myorder.format(qnty, itemno, price))
+
+'''
+Si possono usare gli indici {0} per essere sicuri che gli argomenti siano nel posto corretto.
+'''
+
+qnty = 3
+itemno = 567
+price = 49.95
+myorder = 'I want to pay {2} dollar for {0} pieces of item {1}.'
+print(myorder.format(qnty, itemno, price))
+
+#-------------------------------------------------------------------------------------------------------------------
+
+# ESCAPE CHARACTERS
+
+'''
+Per inserire caratteri non validi in una stringa, si utilizza un carattere di escape [\] seguito poi dal carattere che si desidera inserire.
+Esempio di carattere non valido è una virgoletta doppia [" "] all'interno di una stringa racchiusa tra due virgolette doppie.
+
+Es di errore:
+txt = "We are the so-called "Vikings" from the north."
+'''
+
+txt2 = "We are the so-called \"Vikings\" from the north."
+
+'''
+[\'] = single quote;
+[\\] = backslash;
+[\n] = new line;
+[\r] = carriage return;
+[\t] = tab;
+[\b] = backspace;
+[\f] = form feed;
+[\ooo] = octal value;
+[\xhh] = hex value;
+'''
