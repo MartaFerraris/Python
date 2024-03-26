@@ -197,3 +197,22 @@ txt = "We are the so-called "Vikings" from the north."
 '''
 
 txt2 = "We are the so-called \"Vikings\" from the north."
+
+#-------------------------------------------------------------------------------------------------------------------
+
+# STRING METHODS
+
+method = 'methods'
+method1 = 'METHODS'
+txt3 = 'I love apples, apple are my favorite fruit'
+print(method.capitalize()) # 'Methods'
+print(method1.casefold()) # 'methods'
+print(method.center(20)) #      methods
+print(method.center(25, "-")) # ---------methods---------
+print(txt3.count('apple')) # '2'
+print(txt3.count('apple', 3, 13)) # '1'
+print(txt3.encode(encoding="ascii",errors="backslashreplace"))
+print(txt3.encode(encoding="ascii",errors="ignore"))
+print(txt3.encode(encoding="ascii",errors="namereplace"))
+print(txt3.encode(encoding="ascii",errors="replace"))
+print(txt3.encode(encoding="ascii",errors="xmlcharrefreplace"))
