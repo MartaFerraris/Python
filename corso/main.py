@@ -110,10 +110,66 @@ y = "ciao"
 x = 'Ciao sono Pinco Pallino'
 #print(len(x))
 
-print(x[:3])
-print(x[2:])
-print(x[2:7])
-print(x.upper())
-print(x.lower())
-print(x.strip())
-print(x.replace('o', 'w'))
+#print(x[:3])
+#print(x[2:])
+#print(x[2:7])
+#print(x.upper())
+#print(x.lower())
+#print(x.strip())
+#print(x.replace('o', 'w'))
+
+x = 25
+prova = 'Ciao sono Marta e sono nata il {2}, peso {0}, altezza {1}'
+#con tanti valori si possono usare gli indici per formattare le stringhe.
+#print(prova.format(25, 85, 1.57))
+
+prova = 'Ciao sono Marta e sono \"figa\"'
+prova2 = 'sono alla ricerca dell\'amore'
+#print(prova)
+#print(prova2)
+
+#--------------------------------------------------------------------------
+
+""" 
+07 - Boolean
+    - Cosa sono i valori boolean;
+    - Esempio di comparazione e if;
+    - Valutare i valori delle variabili;
+    - False:
+        - bool(False); -> sempre in maiuscolo
+        - bool(None);
+        - bool(0);
+        - bool("");
+        - bool(());
+        - bool([]);
+        - bool({}).
+"""
+
+x = True
+y = False
+
+#print(5 < 10)
+#print(11 < 10)
+
+""" if 5 < 10:
+    print('Sono MINORE di 10')
+else:
+    print('Sono MAGGIORE di 10') """
+
+""" if 11 < 10:
+    print('Sono MINORE di 10')
+else:
+    print('Sono MAGGIORE di 10') """
+
+x = 0
+y = 1
+#print(bool(x))
+#print(bool(y))
+
+#lista_cose_da_comprare = [] -> non serve fare la spesa
+lista_cose_da_comprare = ['pane', 'limone'] # -> fare la spesa
+
+if lista_cose_da_comprare:
+    print('fare la spesa')
+else:
+    print('non serve fare la spesa')
